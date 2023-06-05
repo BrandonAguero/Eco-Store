@@ -1,0 +1,13 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #FFEFE7;
+}
+
+html {
+  font-size: 62.5%;
+}/*# sourceMappingURL=main.css.map */
