@@ -12,6 +12,9 @@ $size-medium: 2.3rem;
 $size-tablets: 2.8rem;
 $size-desktop-small: 3.3rem;
 $size-desktop-standard: 3.8rem;
+$size-titles-mobile: 3.3rem;
+$size-titles-tablet: 3.8rem;
+$size-titles-desktop: 4.3rem;
 $gap: 1rem;
 
 @mixin icons($url, $size) {

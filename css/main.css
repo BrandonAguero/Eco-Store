@@ -110,7 +110,7 @@ html {
   gap: 1.8rem;
 }
 .main__section:first-of-type div h1 {
-  font-size: 2.3rem;
+  font-size: 3.3rem;
   font-weight: bold;
   color: #7c6a0a;
 }
@@ -149,7 +149,7 @@ html {
     gap: 4rem;
   }
   .main__section:first-of-type div h1 {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
   .main__section:first-of-type div button {
     align-self: flex-start;
@@ -166,7 +166,7 @@ html {
     gap: 5rem;
   }
   .main__section:first-of-type div h1 {
-    font-size: 3.3rem;
+    font-size: 4.3rem;
   }
   .main__section:first-of-type div p {
     font-size: 2.8rem;

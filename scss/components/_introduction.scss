@@ -12,7 +12,7 @@
       flex-direction: column;
       gap: $size-normal;
       h1 {
-        font-size: $size-medium;
+        font-size: $size-titles-mobile;
         font-weight: bold;
         color: $primary-text-color;
       }
@@ -50,7 +50,7 @@
         justify-content: center;
         gap: $gap * 4;
         h1 {
-          font-size: $size-tablets;
+          font-size: $size-titles-tablet;
         }
         button {
           align-self: flex-start;
@@ -71,7 +71,7 @@
         max-width: 60rem;
         gap: $gap * 5;
         h1 {
-          font-size: $size-desktop-small;
+          font-size: $size-titles-desktop;
         }
         p {
           font-size: $size-tablets;
