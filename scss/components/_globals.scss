@@ -1,42 +1,37 @@
-$primary-color: #FFEFE7;
-$secondary-color: #FFDAC6;
-$third-color: #BABD8D;
-$primary-text-color: #7C6A0A;
-$font-family: 'IBM Plex Sans', sans-serif;
-$mobile-medium: 480px;
-$tablets-standard: 768px;
-$desktop-small: 992px;
-$desktop-standard: 1200px;
-$size-paragraph-normal: 1rem;
-$size-paragraph-medium: 1.5rem;
-$size-paragraph-tablets: 2rem;
-$size-paragraph-desktop-small: 2.5rem;
-$size-paragraph-desktop-standard: 3rem;
+$primary-color: #ffefe7;
+$secondary-color: #ffdac6;
+$third-color: #babd8d;
+$primary-text-color: #7c6a0a;
+$font-family: "IBM Plex Sans", sans-serif;
+$mobile-medium: 400px;
+$tablets-standard: 600px;
+$desktop-small: 1000px;
+$desktop-standard: 1500px;
+$size-normal: 1.2rem;
+$size-medium: 1.8rem;
+$size-tablets: 2.3rem;
+$size-desktop-small: 2.8rem;
+$size-desktop-standard: 3.3rem;
 
 @mixin icons($url, $size) {
-	background-image: url($url);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-	width: $size;
-	height: $size;
-}
-
-@mixin centerContainerFlex {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  cursor: pointer;
 }
 
 * {
-	scroll-behavior: smooth;
-	box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
-	font-family: $font-family;
-	background-color: $primary-color;
+  font-family: $font-family;
+  background-color: $primary-color;
 }
 html {
-  	font-size: 62.5%;
+  font-size: 62.5%;
 }

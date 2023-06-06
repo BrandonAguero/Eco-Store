@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: $size-normal;
+  &__nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul:first-of-type {
+      li {
+        a {
+          font-size: $size-medium;
+          text-decoration: none;
+          color: $primary-text-color;
+          font-weight: bold;
+        }
+      }
+    }
+    ul:last-of-type {
+      li.header__nav--phone {
+        @include icons("/assets/svg/menu.svg", $size-tablets);
+      }
+      li.header__nav--desktop {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: $mobile-medium) {
+  .header {
+    margin-top: $size-medium;
+    &__nav {
+      ul:first-of-type {
+        li {
+          a {
+            font-size: $size-tablets;
+          }
+        }
+      }
+      ul:last-of-type {
+        li.header__nav--phone {
+          width: $size-desktop-small;
+          height: $size-desktop-small;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablets-standard) {
+  .header {
+    margin-top: $size-tablets;
+    &__nav {
+      ul:first-of-type {
+        li {
+          a {
+            font-size: $size-desktop-small;
+          }
+        }
+      }
+      ul:last-of-type {
+        display: flex;
+        gap: $size-desktop-standard;
+        li.header__nav--phone {
+          display: none;
+        }
+        li.header__nav--desktop:nth-of-type(2) {
+          @include icons("/assets/svg/profile.svg", $size-desktop-standard);
+        }
+        li.header__nav--desktop:nth-of-type(3) {
+          @include icons("/assets/svg/heart.svg", $size-desktop-standard);
+        }
+        li.header__nav--desktop:last-of-type {
+          @include icons(
+            "/assets/svg/shopping-cart.svg",
+            $size-desktop-standard
+          );
+        }
+      }
+    }
+  }
+}

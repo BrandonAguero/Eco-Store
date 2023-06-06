@@ -5,9 +5,98 @@
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  background-color: #FFEFE7;
+  background-color: #ffefe7;
 }
 
 html {
   font-size: 62.5%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.header__nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav ul:first-of-type li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #7c6a0a;
+  font-weight: bold;
+}
+.header__nav ul:last-of-type li.header__nav--phone {
+  background-image: url("/assets/svg/menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+.header__nav ul:last-of-type li.header__nav--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .header {
+    margin-top: 1.8rem;
+  }
+  .header__nav ul:first-of-type li a {
+    font-size: 2.3rem;
+  }
+  .header__nav ul:last-of-type li.header__nav--phone {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .header {
+    margin-top: 2.3rem;
+  }
+  .header__nav ul:first-of-type li a {
+    font-size: 2.8rem;
+  }
+  .header__nav ul:last-of-type {
+    display: flex;
+    gap: 3.3rem;
+  }
+  .header__nav ul:last-of-type li.header__nav--phone {
+    display: none;
+  }
+  .header__nav ul:last-of-type li.header__nav--desktop:nth-of-type(2) {
+    background-image: url("/assets/svg/profile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+  }
+  .header__nav ul:last-of-type li.header__nav--desktop:nth-of-type(3) {
+    background-image: url("/assets/svg/heart.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+  }
+  .header__nav ul:last-of-type li.header__nav--desktop:last-of-type {
+    background-image: url("/assets/svg/shopping-cart.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */
