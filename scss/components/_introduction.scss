@@ -45,19 +45,15 @@
       justify-content: space-between;
       div {
         max-width: 40rem;
+        width: 54%;
         align-self: center;
         justify-content: center;
         gap: $gap * 4;
         h1 {
           font-size: $size-tablets;
         }
-        p {
-          font-size: $size-medium;
-          line-height: $size-tablets;
-        }
         button {
           align-self: flex-start;
-          font-size: $size-medium;
         }
       }
       img {

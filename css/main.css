@@ -143,6 +143,7 @@ html {
   }
   .main__section:first-of-type div {
     max-width: 40rem;
+    width: 54%;
     align-self: center;
     justify-content: center;
     gap: 4rem;
@@ -150,13 +151,8 @@ html {
   .main__section:first-of-type div h1 {
     font-size: 2.8rem;
   }
-  .main__section:first-of-type div p {
-    font-size: 2.3rem;
-    line-height: 2.8rem;
-  }
   .main__section:first-of-type div button {
     align-self: flex-start;
-    font-size: 2.3rem;
   }
   .main__section:first-of-type img {
     border-radius: 1em;
