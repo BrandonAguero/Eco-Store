@@ -7,11 +7,11 @@ $mobile-medium: 400px;
 $tablets-standard: 600px;
 $desktop-small: 1000px;
 $desktop-standard: 1500px;
-$size-normal: 1.2rem;
-$size-medium: 1.8rem;
-$size-tablets: 2.3rem;
-$size-desktop-small: 2.8rem;
-$size-desktop-standard: 3.3rem;
+$size-normal: 1.8rem;
+$size-medium: 2.3rem;
+$size-tablets: 2.8rem;
+$size-desktop-small: 3.3rem;
+$size-desktop-standard: 3.8rem;
 
 @mixin icons($url, $size) {
   background-image: url($url);
