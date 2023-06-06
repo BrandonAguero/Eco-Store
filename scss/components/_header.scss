@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: $size-normal;
+  margin-top: $size-medium;
   &__nav {
     width: 90%;
     display: flex;
@@ -12,7 +12,7 @@
     ul:first-of-type {
       li {
         a {
-          font-size: $size-medium;
+          font-size: $size-tablets;
           text-decoration: none;
           color: $primary-text-color;
           font-weight: bold;
@@ -21,30 +21,10 @@
     }
     ul:last-of-type {
       li.header__nav--phone {
-        @include icons("/assets/svg/menu.svg", $size-tablets);
+        @include icons("/assets/svg/menu.svg", $size-desktop-small);
       }
       li.header__nav--desktop {
         display: none;
-      }
-    }
-  }
-}
-@media screen and (min-width: $mobile-medium) {
-  .header {
-    margin-top: $size-medium;
-    &__nav {
-      ul:first-of-type {
-        li {
-          a {
-            font-size: $size-tablets;
-          }
-        }
-      }
-      ul:last-of-type {
-        li.header__nav--phone {
-          width: $size-desktop-small;
-          height: $size-desktop-small;
-        }
       }
     }
   }

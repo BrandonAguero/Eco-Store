@@ -17,7 +17,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1.8rem;
+  margin-top: 2.3rem;
 }
 .header__nav {
   width: 90%;
@@ -26,7 +26,7 @@ html {
   align-items: center;
 }
 .header__nav ul:first-of-type li a {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   text-decoration: none;
   color: #7c6a0a;
   font-weight: bold;
@@ -37,26 +37,14 @@ html {
   background-size: cover;
   background-position: center;
   display: inline-block;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3.3rem;
+  height: 3.3rem;
   cursor: pointer;
 }
 .header__nav ul:last-of-type li.header__nav--desktop {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
-  .header {
-    margin-top: 2.3rem;
-  }
-  .header__nav ul:first-of-type li a {
-    font-size: 2.8rem;
-  }
-  .header__nav ul:last-of-type li.header__nav--phone {
-    width: 3.3rem;
-    height: 3.3rem;
-  }
-}
 @media screen and (min-width: 600px) {
   .header {
     margin-top: 2.8rem;
