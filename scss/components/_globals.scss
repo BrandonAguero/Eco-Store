@@ -12,7 +12,7 @@ $size-medium: 2.3rem;
 $size-tablets: 2.8rem;
 $size-desktop-small: 3.3rem;
 $size-desktop-standard: 3.8rem;
-$gap-mobile: 1rem;
+$gap: 1rem;
 
 @mixin icons($url, $size) {
   background-image: url($url);

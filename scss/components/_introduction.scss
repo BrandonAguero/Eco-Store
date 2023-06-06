@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column-reverse;
     width: 90%;
-    gap: $gap-mobile;
+    gap: $gap;
     div {
       display: flex;
       flex-direction: column;
@@ -18,6 +18,7 @@
       }
       p {
         font-size: $size-normal;
+        line-height: $size-medium;
       }
       button {
         background-color: #fa9500;
@@ -33,6 +34,57 @@
     }
     img {
       border-radius: 0.5em;
+    }
+  }
+}
+@media screen and (min-width: $tablets-standard) {
+  .main {
+    margin-top: $size-tablets * 3;
+    &__section:first-of-type {
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        max-width: 40rem;
+        align-self: center;
+        justify-content: center;
+        gap: $gap * 4;
+        h1 {
+          font-size: $size-tablets;
+        }
+        p {
+          font-size: $size-medium;
+          line-height: $size-tablets;
+        }
+        button {
+          align-self: flex-start;
+          font-size: $size-medium;
+        }
+      }
+      img {
+        border-radius: 1em;
+        width: 40%;
+        max-width: 40rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-small) {
+  .main {
+    &__section:first-of-type {
+      div {
+        max-width: 60rem;
+        gap: $gap * 5;
+        h1 {
+          font-size: $size-desktop-small;
+        }
+        p {
+          font-size: $size-tablets;
+          line-height: $size-desktop-small;
+        }
+        button {
+          font-size: $size-tablets;
+        }
+      }
     }
   }
 }

@@ -116,6 +116,7 @@ html {
 }
 .main__section:first-of-type div p {
   font-size: 1.8rem;
+  line-height: 2.3rem;
 }
 .main__section:first-of-type div button {
   background-color: #fa9500;
@@ -130,4 +131,52 @@ html {
 }
 .main__section:first-of-type img {
   border-radius: 0.5em;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    margin-top: 8.4rem;
+  }
+  .main__section:first-of-type {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main__section:first-of-type div {
+    max-width: 40rem;
+    align-self: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .main__section:first-of-type div h1 {
+    font-size: 2.8rem;
+  }
+  .main__section:first-of-type div p {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+  }
+  .main__section:first-of-type div button {
+    align-self: flex-start;
+    font-size: 2.3rem;
+  }
+  .main__section:first-of-type img {
+    border-radius: 1em;
+    width: 40%;
+    max-width: 40rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main__section:first-of-type div {
+    max-width: 60rem;
+    gap: 5rem;
+  }
+  .main__section:first-of-type div h1 {
+    font-size: 3.3rem;
+  }
+  .main__section:first-of-type div p {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+  }
+  .main__section:first-of-type div button {
+    font-size: 2.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
