@@ -111,6 +111,7 @@ html {
 }
 .main__section:first-of-type div h1 {
   font-size: 3.3rem;
+  line-height: 3.8rem;
   font-weight: bold;
   color: #7c6a0a;
 }
@@ -150,6 +151,7 @@ html {
   }
   .main__section:first-of-type div h1 {
     font-size: 3.8rem;
+    line-height: 4.3rem;
   }
   .main__section:first-of-type div button {
     align-self: flex-start;
@@ -167,6 +169,7 @@ html {
   }
   .main__section:first-of-type div h1 {
     font-size: 4.3rem;
+    line-height: 4.8rem;
   }
   .main__section:first-of-type div p {
     font-size: 2.8rem;

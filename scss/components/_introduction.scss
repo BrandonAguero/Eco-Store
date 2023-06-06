@@ -13,6 +13,7 @@
       gap: $size-normal;
       h1 {
         font-size: $size-titles-mobile;
+        line-height: $size-titles-mobile + 0.5rem;
         font-weight: bold;
         color: $primary-text-color;
       }
@@ -51,6 +52,7 @@
         gap: $gap * 4;
         h1 {
           font-size: $size-titles-tablet;
+          line-height: $size-titles-tablet + 0.5rem;
         }
         button {
           align-self: flex-start;
@@ -72,6 +74,7 @@
         gap: $gap * 5;
         h1 {
           font-size: $size-titles-desktop;
+          line-height: $size-titles-desktop + 0.5rem;
         }
         p {
           font-size: $size-tablets;
