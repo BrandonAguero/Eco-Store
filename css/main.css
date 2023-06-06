@@ -97,6 +97,7 @@ html {
   margin-top: 2.3rem;
   flex-direction: column;
   align-items: center;
+  gap: 10rem;
 }
 .main__section:first-of-type {
   display: flex;
@@ -178,4 +179,45 @@ html {
   .main__section:first-of-type div button {
     font-size: 2.8rem;
   }
+}
+.main__section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.main__section:nth-of-type(2) h2 {
+  font-size: 2.8rem;
+  color: #7c6a0a;
+}
+.main__section:nth-of-type(2) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.main__section:nth-of-type(2) > div > div {
+  border-radius: 0.5em;
+  background-color: #ffdac6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__section:nth-of-type(2) > div > div div {
+  width: 80%;
+}
+.main__section:nth-of-type(2) > div > div div img {
+  width: 100%;
+  height: 75%;
+  border-radius: 0.5em;
+}
+.main__section:nth-of-type(2) > div > div div h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7c6a0a;
+}
+.main__section:nth-of-type(2) > div > div div p {
+  color: #7c6a0a;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }/*# sourceMappingURL=main.css.map */

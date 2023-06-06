@@ -2,6 +2,7 @@
   @include containerMain($size-medium);
   flex-direction: column;
   align-items: center;
+  gap: $gap * 10;
   &__section:first-of-type {
     display: flex;
     flex-direction: column-reverse;
