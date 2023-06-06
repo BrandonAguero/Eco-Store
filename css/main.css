@@ -126,6 +126,7 @@ html {
   font-weight: bold;
   align-self: center;
   cursor: pointer;
+  font-size: 1.8rem;
 }
 .main__section:first-of-type img {
   border-radius: 0.5em;
