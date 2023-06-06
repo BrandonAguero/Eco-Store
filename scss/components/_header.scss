@@ -1,9 +1,6 @@
 .header {
-  min-width: 32rem;
-  width: 100%;
-  display: flex;
+  @include containerMain($size-medium);
   justify-content: center;
-  margin-top: $size-medium;
   &__nav {
     width: 90%;
     display: flex;
