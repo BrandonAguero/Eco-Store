@@ -238,6 +238,7 @@ html {
   font-size: 1.3rem;
   line-height: 1.8rem;
 }
+
 @media screen and (min-width: 600px) {
   .main__section:nth-of-type(2) > div {
     -moz-column-gap: 5rem;
@@ -252,4 +253,16 @@ html {
          column-gap: 17%;
     row-gap: 3rem;
   }
+}
+.main .home-decor > div > div {
+  background-color: #babd8d;
+}
+.main .home-decor > div > div div span {
+  background-image: url("/assets/svg/heart-white.svg");
+}
+.main .home-decor > div > div div h4 {
+  color: #ffffff;
+}
+.main .home-decor > div > div div p {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

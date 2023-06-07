@@ -49,9 +49,6 @@
       }
     }
   }
-  .home-decor {
-    @extend .health-care;
-  }
 }
 @media screen and (min-width: $tablets-standard) {
   .main {
