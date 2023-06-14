@@ -18,6 +18,8 @@
         background-color: $secondary-color;
         padding: 2rem;
         display: flex;
+        width: 90%;
+        max-width: 25rem;
         flex-direction: column;
         align-items: center;
         span {
@@ -31,11 +33,7 @@
           width: 80%;
           height: 100%;
           justify-content: space-between;
-          img {
-            width: 100%;
-            min-height: 75%;
-            border-radius: 0.5em;
-          }
+
           > div {
             min-height: 30%;
             h4 {
@@ -71,6 +69,71 @@
       > div {
         column-gap: 17%;
         row-gap: $gap * 3;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-medium) {
+  .main {
+    .health-care {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      h2 {
+        font-size: $size-titles-mobile - 0.5rem;
+        color: $primary-text-color;
+        margin-bottom: $gap * 3;
+      }
+      > div {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        gap: 2rem;
+        > div {
+          border-radius: 0.5em;
+          background-color: $secondary-color;
+          padding: 2rem;
+          display: flex;
+          min-width: 22rem;
+          flex-direction: column;
+          align-items: center;
+          scroll-snap-align: center;
+          min-height: 120%;
+          span {
+            @include icons("/assets/svg/heart.svg", 2rem);
+            position: relative;
+            left: 46%;
+          }
+          > div {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 100%;
+            justify-content: space-between;
+            img {
+              width: 100%;
+              min-height: 67%;
+              max-width: 22rem;
+              border-radius: 0.5em;
+            }
+            > div {
+              min-height: 30%;
+              h4 {
+                margin-top: $gap;
+                font-size: $size-normal;
+                font-weight: bold;
+                color: $primary-text-color;
+              }
+              p {
+                color: $primary-text-color;
+                font-size: $size-normal - 0.5rem;
+                line-height: $size-normal;
+              }
+            }
+          }
+        }
       }
     }
   }
