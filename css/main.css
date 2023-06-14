@@ -339,15 +339,15 @@ html {
 
 @media screen and (min-width: 600px) {
   .main .home-decor > div {
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
     row-gap: 2rem;
   }
 }
 @media screen and (min-width: 1000px) {
   .main .home-decor > div {
-    -moz-column-gap: 17%;
-         column-gap: 17%;
+    -moz-column-gap: 9%;
+         column-gap: 9%;
     row-gap: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */

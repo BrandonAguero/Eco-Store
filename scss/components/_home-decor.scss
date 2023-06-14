@@ -23,7 +23,7 @@
   .main {
     .home-decor {
       > div {
-        column-gap: $gap * 5;
+        column-gap: 5%;
         row-gap: $gap * 2;
       }
     }
@@ -33,7 +33,7 @@
   .main {
     .home-decor {
       > div {
-        column-gap: 17%;
+        column-gap: 9%;
         row-gap: $gap * 3;
       }
     }
