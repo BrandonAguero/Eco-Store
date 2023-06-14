@@ -1,0 +1,66 @@
+.main {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+    h2 {
+      color: $primary-text-color;
+      font-size: $size-tablets;
+      font-weight: bold;
+    }
+    > div {
+      display: flex;
+      gap: 2rem;
+      img {
+        width: 20rem;
+        border-radius: 0.5em;
+      }
+    }
+  }
+}
+@media screen and (max-width: $tablets-standard) {
+  .main {
+    .gallery {
+      > div {
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        img {
+          scroll-snap-align: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablets-standard) {
+  .main {
+    .gallery {
+      > div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-small) {
+  .main {
+    .gallery {
+      > div {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-standard) {
+  .main {
+    .gallery {
+      > div {
+        img {
+          width: 30rem;
+        }
+      }
+    }
+  }
+}

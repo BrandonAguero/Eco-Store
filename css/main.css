@@ -430,6 +430,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .main .why-we > div div {
     display: flex;
@@ -461,5 +462,52 @@ html {
     color: #e86424;
     font-size: 2.8rem;
     line-height: 3.3rem;
+  }
+}
+.main .gallery {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 2rem;
+}
+.main .gallery h2 {
+  color: #7c6a0a;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.main .gallery > div {
+  display: flex;
+  gap: 2rem;
+}
+.main .gallery > div img {
+  width: 20rem;
+  border-radius: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .main .gallery > div {
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+  .main .gallery > div img {
+    scroll-snap-align: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main .gallery > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main .gallery > div {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .main .gallery > div img {
+    width: 30rem;
   }
 }/*# sourceMappingURL=main.css.map */
