@@ -19,3 +19,23 @@
     }
   }
 }
+@media screen and (min-width: $tablets-standard) {
+  .main {
+    .home-decor {
+      > div {
+        column-gap: $gap * 5;
+        row-gap: $gap * 2;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-small) {
+  .main {
+    .home-decor {
+      > div {
+        column-gap: 17%;
+        row-gap: $gap * 3;
+      }
+    }
+  }
+}

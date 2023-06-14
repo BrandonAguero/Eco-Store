@@ -64,7 +64,6 @@
   .main {
     &__section:nth-of-type(2) {
       > div {
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         column-gap: 17%;
         row-gap: $gap * 3;
       }
