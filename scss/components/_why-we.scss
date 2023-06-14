@@ -57,3 +57,23 @@
     }
   }
 }
+@media screen and (min-width: $desktop-standard) {
+  .main {
+    .why-we {
+      > div {
+        justify-content: space-between;
+        max-width: 150rem;
+        div {
+          img {
+            width: 20rem;
+          }
+          p {
+            color: #e86424;
+            font-size: $size-normal + 1rem;
+            line-height: $size-normal + 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
