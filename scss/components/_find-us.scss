@@ -1,0 +1,45 @@
+.main {
+  .find-us {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: $size-tablets;
+      color: $primary-text-color;
+      font-weight: 500;
+    }
+    figure {
+      margin-top: 2rem;
+      img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+      }
+      figcaption {
+        margin-top: 2rem;
+        font-size: $size-normal;
+        font-weight: bold;
+        color: #e86424;
+      }
+    }
+    p {
+      margin-top: 1rem;
+      color: #e86424;
+    }
+  }
+}
+@media screen and (min-width: $desktop-small) {
+  .main {
+    .find-us {
+      figure {
+        img {
+          object-fit: contain;
+        }
+        figcaption {
+          font-size: $size-normal + 0.5rem;
+          color: #e86424;
+        }
+      }
+    }
+  }
+}

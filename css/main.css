@@ -510,4 +510,89 @@ html {
   .main .gallery > div img {
     width: 30rem;
   }
+}
+.main .find-us {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.main .find-us h2 {
+  font-size: 2.8rem;
+  color: #7c6a0a;
+  font-weight: 500;
+}
+.main .find-us figure {
+  margin-top: 2rem;
+}
+.main .find-us figure img {
+  width: 100%;
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .find-us figure figcaption {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e86424;
+}
+.main .find-us p {
+  margin-top: 1rem;
+  color: #e86424;
+}
+
+@media screen and (min-width: 1000px) {
+  .main .find-us figure img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main .find-us figure figcaption {
+    font-size: 2.3rem;
+    color: #e86424;
+  }
+}
+.footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fa9500;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.footer div ul:first-of-type {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer div ul:first-of-type a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer div ul:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer div ul:last-of-type a {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer div ul:last-of-type {
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer div ul:last-of-type {
+    gap: 8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
