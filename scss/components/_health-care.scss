@@ -1,4 +1,4 @@
-@media screen and (min-width: $mobile-medium) {
+@media screen and (min-width: $tablets-standard) {
   .main {
     .health-care {
       display: flex;
@@ -11,9 +11,9 @@
       }
       > div {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        column-gap: $gap;
-        row-gap: $gap * 10;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        column-gap: 5%;
+        row-gap: $gap * 2;
         > div {
           border-radius: 0.5em;
           background-color: $secondary-color;
@@ -37,8 +37,7 @@
             img {
               border-radius: 0.5em;
               width: 100%;
-              min-height: 60%;
-              max-height: 25rem;
+              min-height: 71%;
             }
             > div {
               min-height: 30%;
@@ -61,27 +60,17 @@
   }
 }
 
-@media screen and (min-width: $tablets-standard) {
-  .main {
-    &__section:nth-of-type(2) {
-      > div {
-        column-gap: $gap * 5;
-        row-gap: $gap * 2;
-      }
-    }
-  }
-}
 @media screen and (min-width: $desktop-small) {
   .main {
     &__section:nth-of-type(2) {
       > div {
-        column-gap: 15%;
+        column-gap: 9%;
         row-gap: $gap * 3;
       }
     }
   }
 }
-@media screen and (max-width: $mobile-medium) {
+@media screen and (max-width: $tablets-standard) {
   .main {
     .health-care {
       display: flex;
