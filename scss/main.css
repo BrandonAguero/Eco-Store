@@ -205,12 +205,10 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.main .health-care > div > div div, .main .home-decor > div > div div {
+.main .health-care > div > div > div, .main .home-decor > div > div > div {
   display: flex;
-  flex-direction: column;
-  width: 80%;
 }
-.main .health-care > div > div div span, .main .home-decor > div > div div span {
+.main .health-care > div > div > div span, .main .home-decor > div > div > div span {
   background-image: url("/assets/svg/heart.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,18 +220,18 @@ html {
   position: relative;
   left: 100%;
 }
-.main .health-care > div > div div img, .main .home-decor > div > div div img {
+.main .health-care > div > div > div img, .main .home-decor > div > div > div img {
   width: 100%;
   height: 75%;
   border-radius: 0.5em;
 }
-.main .health-care > div > div div h4, .main .home-decor > div > div div h4 {
+.main .health-care > div > div > div > div h4, .main .home-decor > div > div > div > div h4 {
   margin-top: 1rem;
   font-size: 1.8rem;
   font-weight: bold;
   color: #7c6a0a;
 }
-.main .health-care > div > div div p, .main .home-decor > div > div div p {
+.main .health-care > div > div > div > div p, .main .home-decor > div > div > div > div p {
   color: #7c6a0a;
   font-size: 1.3rem;
   line-height: 1.8rem;

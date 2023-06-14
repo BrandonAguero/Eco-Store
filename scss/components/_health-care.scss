@@ -20,30 +20,35 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        div {
+        span {
+          @include icons("/assets/svg/heart.svg", 2rem);
+          position: relative;
+          left: 46%;
+        }
+        > div {
           display: flex;
           flex-direction: column;
           width: 80%;
-          span {
-            @include icons("/assets/svg/heart.svg", 2rem);
-            position: relative;
-            left: 100%;
-          }
+          height: 100%;
+          justify-content: space-between;
           img {
             width: 100%;
-            height: 75%;
+            min-height: 75%;
             border-radius: 0.5em;
           }
-          h4 {
-            margin-top: $gap;
-            font-size: $size-normal;
-            font-weight: bold;
-            color: $primary-text-color;
-          }
-          p {
-            color: $primary-text-color;
-            font-size: $size-normal - 0.5rem;
-            line-height: $size-normal;
+          > div {
+            min-height: 30%;
+            h4 {
+              margin-top: $gap;
+              font-size: $size-normal;
+              font-weight: bold;
+              color: $primary-text-color;
+            }
+            p {
+              color: $primary-text-color;
+              font-size: $size-normal - 0.5rem;
+              line-height: $size-normal;
+            }
           }
         }
       }
