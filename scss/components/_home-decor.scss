@@ -39,3 +39,31 @@
     }
   }
 }
+@media screen and (min-width: $desktop-standard) {
+  .main {
+    max-width: 180rem;
+    .health-care {
+      > div {
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        column-gap: 9%;
+        row-gap: $gap * 10;
+        > div {
+          border-radius: 1em;
+          max-width: 35rem;
+          > div {
+            > div {
+              h4 {
+                margin-top: $gap * 2;
+                font-size: $size-tablets;
+              }
+              p {
+                font-size: $size-normal;
+                line-height: $size-normal + 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

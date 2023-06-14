@@ -1,4 +1,5 @@
 .header {
+  max-width: 180rem;
   @include containerMain($size-medium);
   justify-content: center;
   &__nav {
